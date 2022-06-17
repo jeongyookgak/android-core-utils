@@ -19,19 +19,18 @@ fun ZonedDateTime.getDaysFrom(from: ZonedDateTime) = Duration.between(from, this
 
 fun ZonedDateTime.getMillisFrom(from: ZonedDateTime) = Duration.between(from, this).toMillis().toInt()
 
-
 fun ZonedDateTime.isToday() = this.toLocalDate() == LocalDate.now(zone)
 
 fun ZonedDateTime.isTomorrow() = this.toLocalDate() == LocalDate.now(zone).plusDays(1)
 
 fun ZonedDateTime.isDayAfterTomorrow() = this.toLocalDate() == LocalDate.now(zone).plusDays(2)
+
 fun DayOfWeek.getShortDisplayName(locale: Locale = Locale.getDefault()): String = this.getDisplayName(TextStyle.SHORT, locale)
 
 fun DayOfWeek.getDisplayName(locale: Locale = Locale.getDefault()): String = this.getDisplayName(TextStyle.FULL, locale)
 
 fun ZonedDateTime.isWeekend() = dayOfWeek == DayOfWeek.SATURDAY || dayOfWeek == DayOfWeek.SUNDAY
 
-@Suppress("SpellCheckingInspection")
 fun ZonedDateTime.inTimePeriod(startHour: Int, startMin: Int = 0, endHour: Int, endMin: Int = 0) = (hour * 60 + minute).let { mins ->
     (startHour * 60 + startMin) <= mins && mins <= (endHour * 60 + endMin)
 }
