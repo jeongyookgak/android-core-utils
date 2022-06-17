@@ -4,7 +4,7 @@ import org.threeten.bp.LocalDateTime
 import org.threeten.bp.ZonedDateTime
 import org.threeten.bp.format.DateTimeFormatter
 
-class DateTimeUtilImpl : DateTimeUtil {
+internal class DateTimeUtilImpl : DateTimeUtil {
 
     override fun now(): String {
         return LocalDateTime.now().toString()
