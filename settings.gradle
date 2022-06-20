@@ -16,4 +16,3 @@ rootProject.name = "utils"
 include ':app'
 include ':utils'
 include ':time'
-include ':buildSrc'
