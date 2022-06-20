@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    compileSdkVersion(32)
+    compileSdk = 32
 
     defaultConfig {
         minSdkVersion(24)
@@ -15,10 +15,21 @@ android {
     }
 
     buildTypes {
-        getByName("release") {
+        debug {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
+        release {
+            isMinifyEnabled = false
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+        }
+    }
+
+    buildFeatures {
+        buildConfig = true
+        viewBinding = false
+        dataBinding = true
+        compose = false
     }
 
     compileOptions {
