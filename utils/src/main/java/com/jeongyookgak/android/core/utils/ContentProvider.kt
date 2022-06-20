@@ -1,5 +1,6 @@
 package com.jeongyookgak.android.core.utils
 
+import android.app.Application
 import android.content.ContentProvider
 import android.content.ContentValues
 import android.database.Cursor
@@ -10,9 +11,8 @@ import com.jeongyookgak.android.core.utils.extension.showToast
 class ContentProvider: ContentProvider() {
     override fun onCreate(): Boolean {
         Log.e("jhim", "contentProvide Test!!")
-        context?.showToast("jhim TEST!")
-        TODO("Not yet implemented")
-
+        val application = context as Application
+        application.showToast("jhim TEST!")
     }
 
     override fun query(
@@ -22,19 +22,19 @@ class ContentProvider: ContentProvider() {
         selectionArgs: Array<out String>?,
         sortOrder: String?
     ): Cursor? {
-        TODO("Not yet implemented")
+        throw UnsupportedOperationException()
     }
 
     override fun getType(uri: Uri): String? {
-        TODO("Not yet implemented")
+        throw UnsupportedOperationException()
     }
 
     override fun insert(uri: Uri, values: ContentValues?): Uri? {
-        TODO("Not yet implemented")
+        throw UnsupportedOperationException()
     }
 
     override fun delete(uri: Uri, selection: String?, selectionArgs: Array<out String>?): Int {
-        TODO("Not yet implemented")
+        throw UnsupportedOperationException()
     }
 
     override fun update(
@@ -43,6 +43,6 @@ class ContentProvider: ContentProvider() {
         selection: String?,
         selectionArgs: Array<out String>?
     ): Int {
-        TODO("Not yet implemented")
+        throw UnsupportedOperationException()
     }
 }
