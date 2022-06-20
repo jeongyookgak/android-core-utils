@@ -13,6 +13,8 @@ class ContentProvider: ContentProvider() {
         Log.e("jhim", "contentProvide Test!!")
         val application = context as Application
         application.showToast("jhim TEST!")
+
+        return true
     }
 
     override fun query(
