@@ -10,7 +10,6 @@ import com.jeongyookgak.android.core.utils.extension.showToast
 class ContentProvider: ContentProvider() {
     override fun onCreate(): Boolean {
         Log.e("jhim", "contentProvide Test!!")
-        context?.showToast("jhim TEST!")
         TODO("Not yet implemented")
 
     }
