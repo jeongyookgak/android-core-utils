@@ -1,4 +1,4 @@
-package com.jeongyookgak.android.core.utils
+package com.jeongyookgak.android.core.time
 
 import android.app.Application
 import android.content.ContentProvider
@@ -6,11 +6,14 @@ import android.content.ContentValues
 import android.database.Cursor
 import android.net.Uri
 import android.util.Log
+import com.jakewharton.threetenabp.AndroidThreeTen
 
 class ContentProvider: ContentProvider() {
     override fun onCreate(): Boolean {
-        Log.e("jhim", "contentProvide in util")
+        val application = context as Application
+        Log.e("jhim", "contentProvide in time")
 
+        AndroidThreeTen.init(application)
 
         return true
     }
