@@ -21,3 +21,5 @@ allprojects {
 tasks.register("clean", Delete::class) {
     delete(rootProject.buildDir)
 }
+
+group = "com.github.jeongyookgak"

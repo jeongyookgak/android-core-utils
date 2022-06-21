@@ -57,5 +57,4 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
 
     implementation("com.jakewharton.threetenabp:threetenabp:1.4.0")
-
 }
