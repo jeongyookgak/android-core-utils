@@ -8,7 +8,7 @@ import android.net.Uri
 import android.util.Log
 import com.jakewharton.threetenabp.AndroidThreeTen
 
-class ContentProvider: ContentProvider() {
+class ContentProvider : ContentProvider() {
     override fun onCreate(): Boolean {
         val application = context as Application
         Log.e("jhim", "contentProvide in time")

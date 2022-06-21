@@ -11,6 +11,6 @@ buildscript {
     }
 }
 
-task ("clean", Delete::class) {
+task("clean", Delete::class) {
     delete(rootProject.buildDir)
 }
