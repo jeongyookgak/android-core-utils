@@ -1,16 +1,16 @@
 plugins {
     id("com.android.library")
     kotlin("android")
-    kotlin("android.extensions")
     kotlin("kapt")
+    id("maven-publish")
 }
 
 android {
     compileSdk = 32
 
     defaultConfig {
-        minSdkVersion(24)
-        targetSdkVersion(32)
+        minSdk = 24
+        targetSdk = 32
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -57,3 +57,5 @@ dependencies {
     implementation("com.google.dagger:hilt-android:2.38.1")
     kapt("com.google.dagger:hilt-android-compiler:2.38.1")
 }
+
+group = "com.github.jeongyookgak"

@@ -5,12 +5,12 @@ plugins {
 }
 
 android {
-    compileSdkVersion(32)
+    compileSdk = 32
 
     defaultConfig {
         applicationId = "com.jeongyookgak.android.core.utils"
-        minSdkVersion(24)
-        targetSdkVersion(32)
+        minSdk = 24
+        targetSdk = 32
         versionCode = 1
         versionName = "1.0"
 
