@@ -4,4 +4,4 @@ import androidx.annotation.Keep
 
 @Keep
 @Suppress("SpellCheckingInspection")
-class KakaotalkNotInstalledException: Exception("KakaotalkNotInstalledException")
+class KakaotalkNotInstalledException : Exception("KakaotalkNotInstalledException")

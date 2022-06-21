@@ -3,4 +3,4 @@ package com.jeongyookgak.android.core.utils.util.exception
 import androidx.annotation.Keep
 
 @Keep
-class NetworkDisconnectedException: Exception("NetworkDisconnectedException")
+class NetworkDisconnectedException : Exception("NetworkDisconnectedException")
