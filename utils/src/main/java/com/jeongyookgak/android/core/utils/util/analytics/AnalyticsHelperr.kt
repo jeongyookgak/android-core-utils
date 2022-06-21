@@ -8,5 +8,4 @@ interface AnalyticsHelperr {
     fun logEvent(eventName: String)
     fun logEvent(eventName: String, params: Map<String, Any?>)
     fun logEvent(eventName: String, params: Bundle)
-
 }
