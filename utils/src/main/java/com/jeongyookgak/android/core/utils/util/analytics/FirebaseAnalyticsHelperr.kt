@@ -16,15 +16,13 @@ class FirebaseAnalyticsHelperr @Inject constructor(
     override fun logEvent(eventName: String) {
         context.showToast("테스트!!")
         Log.e("jhim", eventName)
-        TODO("Not yet implemented")
     }
 
     override fun logEvent(eventName: String, params: Map<String, Any?>) {
-        TODO("Not yet implemented")
+        Log.e("jhim", eventName)
     }
 
     override fun logEvent(eventName: String, params: Bundle) {
-        TODO("Not yet implemented")
+        Log.e("jhim", eventName)
     }
-
 }
