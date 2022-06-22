@@ -73,7 +73,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.jeongyookgak"
                 artifactId = "android-core-utils"
-                version = "1.0.0-beta01"
+                version = "1.0.0-beta02"
             }
         }
     }
