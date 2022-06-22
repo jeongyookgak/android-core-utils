@@ -1,4 +1,4 @@
-package com.jeongyookgak.android.core.utils.util.exception
+package com.jeongyookgak.android.core.utils.exception
 
 import androidx.annotation.Keep
 

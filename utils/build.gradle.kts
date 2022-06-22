@@ -3,6 +3,7 @@ plugins {
     kotlin("android")
     kotlin("kapt")
     id("maven-publish")
+    id("com.google.firebase.crashlytics")
 }
 
 android {
@@ -64,6 +65,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.5.31")
     implementation("com.google.dagger:hilt-android:2.38.1")
     kapt("com.google.dagger:hilt-android-compiler:2.38.1")
+    implementation("com.google.firebase:firebase-crashlytics-ktx:18.2.11")
 }
 
 afterEvaluate {

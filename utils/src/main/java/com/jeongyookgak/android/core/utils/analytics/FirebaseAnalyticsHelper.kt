@@ -1,4 +1,4 @@
-package com.jeongyookgak.android.core.utils.util.analytics
+package com.jeongyookgak.android.core.utils.analytics
 
 import android.annotation.SuppressLint
 import android.content.Context
