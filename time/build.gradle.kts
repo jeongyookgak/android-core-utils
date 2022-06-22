@@ -2,6 +2,7 @@ plugins {
     id("com.android.library")
     kotlin("android")
     kotlin("kapt")
+    id("maven-publish")
 }
 
 android {
@@ -57,5 +58,19 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.3")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
 
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.5.31")
     implementation("com.jakewharton.threetenabp:threetenabp:1.4.0")
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                from(components["release"])
+                groupId = "com.github.jeongyookgak"
+                artifactId = "android-core-time"
+                version = "1.0.0-beta01"
+            }
+        }
+    }
 }

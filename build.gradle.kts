@@ -1,7 +1,3 @@
-plugins {
-    id("maven-publish")
-}
-
 buildscript {
     repositories {
         google()
@@ -27,5 +23,3 @@ allprojects {
 tasks.register("clean", Delete::class) {
     delete(rootProject.buildDir)
 }
-
-group = "com.github.jeongyookgak"
