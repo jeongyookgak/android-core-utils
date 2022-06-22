@@ -4,12 +4,10 @@ import android.content.ContentProvider
 import android.content.ContentValues
 import android.database.Cursor
 import android.net.Uri
-import android.util.Log
 
 class ContentProvider : ContentProvider() {
-    override fun onCreate(): Boolean {
-        Log.e("jhim", "contentProvide in util")
 
+    override fun onCreate(): Boolean {
         return true
     }
 
