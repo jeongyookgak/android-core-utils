@@ -69,7 +69,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.jeongyookgak"
                 artifactId = "android-core-time"
-                version = "1.0.0-beta02"
+                version = "1.0.0-beta03"
             }
         }
     }
