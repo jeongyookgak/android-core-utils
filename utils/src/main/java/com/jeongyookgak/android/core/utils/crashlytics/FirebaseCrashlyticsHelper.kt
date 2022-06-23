@@ -10,7 +10,8 @@ class FirebaseCrashlyticsHelper @Inject constructor() : CrashlyticsHelper {
     }
 
     override fun logAndReport(error: Throwable) {
-
+        error.printStackTrace()
+        report(error)
     }
 
 }
