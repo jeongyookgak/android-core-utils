@@ -38,12 +38,16 @@ android {
         buildConfig = true
         viewBinding = false
         dataBinding = true
-        compose = false
+        compose = true
     }
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.2.0-beta02"
     }
 
     kotlinOptions {
@@ -66,6 +70,8 @@ dependencies {
     implementation("com.google.dagger:hilt-android:2.38.1")
     kapt("com.google.dagger:hilt-android-compiler:2.38.1")
     implementation("com.google.firebase:firebase-crashlytics-ktx:18.2.11")
+    implementation("androidx.compose.ui:ui:1.2.0-beta02")
+
 }
 
 afterEvaluate {
